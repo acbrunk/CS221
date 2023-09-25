@@ -1,0 +1,32 @@
+/* Define styles for the flex container */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Define styles for the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjust the size of grid cells as needed */
+    gap: 10px; /* Adjust the gutter as needed */
+}
+
+/* Define styles for grid items */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Change the background color as needed */
+    color: #ffffff; /* Change the font color as needed */
+    font-size: 24px;
+    font-weight: bold;
+    height: 100px; /* Adjust the size of grid items as needed */
+}
+
+
+.full-width {
+    grid-column: span 3; 
+}
+/* code generated through chat gpt prompt was the assignment.*/
