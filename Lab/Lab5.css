@@ -1,0 +1,85 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color: #333;
+    color:#fff;
+}
+
+/* Header styling and layout */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Apply hover effect to menu items */
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Other section styles and layout go here */
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.portfolio-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.portfolio-section p {
+    font-size: 16px;
+}
+
+.project {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 300px; /* Adjust the width as needed */
+}
+
+.project img {
+    max-width: 100%;
+}
