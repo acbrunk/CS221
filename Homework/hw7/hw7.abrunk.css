@@ -1,5 +1,70 @@
-.photo-grid{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+header{
+    padding: 40px;
+}
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Styles for grid items */
+.photo-grid-item {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-size: cover; 
+    background-position: center;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: transform 0.3s ease;
+    position: relative;
+    
+}
+
+/* Hover effect on grid items */
+.photo-grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Style every other grid item with a different border */
+.photo-grid-item:nth-child(odd) {
+    border-style: dashed;
+}
+
+/* Pseudo-element for overlay */
+.photo-grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Pseudo-element for magnifying glass icon */
+.photo-grid-item::after {
+    content: "\f002"; /* Font Awesome magnifying glass icon */
+    font-family: FontAwesome;
+    font-size: 36px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Show the overlay and magnifying glass on hover */
+.photo-grid-item:hover::before,
+.photo-grid-item:hover::after {
+    opacity: 1;
 }
