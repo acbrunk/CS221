@@ -1,7 +1,8 @@
 body, h1, h2, h3, p {
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
+
 body{
     text-align: center;
     background-color: #333;
@@ -22,10 +23,11 @@ nav {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
+    position:fixed;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -45,7 +47,7 @@ nav ul li a {
 
 /* Apply hover effect to menu items */
 nav ul li a:hover {
-    color: #ff6600;
+    color: red;
 }
 
 /* Other section styles and layout go here */
@@ -57,27 +59,29 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+.about-me{
+    padding: 30px;
+}
 .portfolio-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .portfolio-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .portfolio-section p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .project {
     margin-top: 20px;
     text-align: left;
-    max-width: 300px; /* Adjust the width as needed */
+    max-width: 800px; /* Adjust the width as needed */
 }
 
 .project img {
@@ -89,5 +93,14 @@ footer {
 }
 
 .contact{
-    text-align: center
+    text-align: center 
+}
+h2{
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+}
+h3{
+    font-size:30px;
 }
