@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Grade Calculator </title>
+        <script>
+            
+                const num = prompt("Enter the student's numeric grade:");
+                var grade;
+                var reward;
+                if (isNaN(num) || num > 100 || num < 0 ){ /* isNaN was found on https://www.w3schools.com/jsref/jsref_isnan_number.asp#:~:text=()%20and%20Number.-,isnan(),is%20Not%2Da%2DNumber.*/
+                grade = "Please enter valid response";
+                reward = "Maybe you would get a treat if you entered a valid response ;)";
+                } else if (num >= 90 && num <= 100){
+                    grade = "A";
+                    reward = "Candy";
+                } else if (num >= 80 && num < 90){
+                    grade = "B";
+                    reward = "Apple";
+                } else if (num >= 70 && num < 80){
+                    grade = "C";
+                    reward = "Mint";
+                } else if (num >= 60 && num < 70){
+                    grade = "D";
+                    reward = "Pencil";
+                } else {
+                    grade = "F";
+                    reward = "Awkward Conversation with parents";
+                }
+            
+            
+                console.log(`Numeric Grade: ${num}`);
+                console.log(`Letter Grade: ${grade}`);
+                console.log(`Treat: ${reward}`);
+
+        </script>
+    </head>
+    <body>
+        
+        
+    </body>
